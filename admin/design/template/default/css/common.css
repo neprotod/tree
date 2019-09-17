@@ -1,0 +1,1297 @@
+@import url("reset.css");
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#858585;
+    color: #333333;
+    font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+#main{
+    /*background-color: #F7F7F7;*/
+    width:1000px;
+    margin:auto;
+    padding-bottom:10px;
+}
+/*Верхнее меню*/
+#main_menu{
+    margin-top:10px;
+    background:#F3F3F3;
+    padding:5px 0px;
+}
+#main_menu li{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:12px;
+    margin-right:20px;
+    border:1px solid #E6E5E5;
+    float:left;
+    border-radius:5px;
+}
+#main_menu a{
+    color:#8A4D4D;
+}
+#main_menu a:hover{
+    color:#E0A46C;
+}
+#tab_menu {
+    /*border-bottom: 1px solid #FFFFFF;*/
+    font-size: 17px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2px;
+    margin-top:10px;
+    margin-bottom:-9px;
+    position:relative;
+    z-index:2;
+    bottom:-1px;
+}
+#tab_menu li {
+    float: left;
+}
+#tab_menu li a {
+    border-bottom: 1px solid #F7F7F7;
+    background-image:url(../img/tab_shadow.png);
+    background-repeat:repeat-x;
+    background-position:bottom;
+    background-color:#F7F7F7;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #404040;
+    display: block;
+    height: 28px;
+    margin-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    
+}
+
+#tab_menu li a:hover {
+    color:#B38040;
+    background-color:#fff;
+    background-image:url(../img/tab_shadow_hover.png);
+}
+#tab_menu .active a {
+     background:#F7F7F7 !important;
+     text-decoration:none;
+}
+/*************/
+#middle{
+    padding:30px;
+    border:1px solid #fff;
+    margin-top:10px;
+    background:#F7F7F7;
+    overflow:hidden;
+    position:relative;
+}
+#main_list{
+    float:left;
+    width: 710px;
+    overflow: hidden;
+}
+
+#right_menu li a {
+    color: #000000;
+    padding: 0;
+}
+
+#right_menu ul {
+    margin: 5px 5px 30px;
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+#right_menu ul {
+    margin: 5px 5px 30px;
+}
+
+#right_menu {
+   display:block;
+   float: right;
+   margin-left: 40px;
+   width:180px;
+}
+
+#right_menu ul ul {
+   margin: 0 0 0 20px;
+   padding: 0;
+}
+
+#right_menu li {
+    margin-bottom: 7px;
+}
+
+/*Смещаем описание товара*/
+#column_left, #column_right {
+    float: left;
+    width: 445px;
+    position:relative;
+}
+
+.products_main #list .checkbox {
+    margin-top:7px;
+    padding-left: 5px;
+    padding-right: 0;
+    width: 20px;
+}
+
+.products_main #list .image {
+    margin-left:5px;
+}
+.products_main #list .cell {
+    float: left;
+    padding: 10px 0 7px;
+    vertical-align: top;
+}
+.products_main #list .cell_right {
+    float: right;
+    padding: 10px 0 7px;
+    vertical-align: top;
+}
+.products_main #list .product_name {
+   width: 100%;
+}
+.products_main #list .row .name {
+    color: #000000;
+}
+.products_main #list .name {
+    font-size: 12px;
+    max-width: 600px;
+    padding-left: 10px;
+}
+
+.products_main #list .variants {
+    color: #707070;
+    float: right;
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: right;
+}
+.products_main #list .row .name a {
+    border-bottom-color: #000000;
+    color: #000000;
+}
+
+.products_main #list .variants ul li {
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-align: right;
+}
+.products_main #list .variants .variant{
+    display:none;
+}
+
+.products_main #list .variants div.expand_variant {
+    float: right;
+    text-align: left;
+    padding:5px;
+}
+
+.products_main #list .variants ul i {
+    font-style: normal;
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+.products_main #list .variants ul .price {
+    font-size: 14px;
+    margin-right: 3px;
+    text-align: right;
+    width: 80px;
+}
+
+.products_main #list .variants ul .stock {
+    color: #4E4E4E;
+    font-size: 14px;
+    margin-right: 3px;
+    text-align: right;
+    width: 40px;
+}
+.products_main #list .icons {
+    padding:10px;
+    background:#fefcf5;
+    border-radius:5px;
+    margin-right:10px;
+    border:1px solid #cfcfcf;
+}
+.products_main #list .icons a{
+    color:#328FED;
+    margin-left:5px;
+    margin-right:5px;
+}
+.products_main #list .invisible .icons .enable{
+    color:#000;
+}
+/*Красим поля*/
+.products_main #list .even {
+    background: #e6e5e5 !important;
+}
+.products_main #list .row {
+    padding-top:5px;
+    background: #F3F3F3;
+    border-collapse: collapse;
+    border-top: 1px solid #D0D0D0;
+    position:relative;
+}
+/*Астион*/
+#action {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+.dash_link {
+    border-bottom: 1px dotted #4D4D4D;
+    color: #4D4D4D;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#action span#select{
+    padding-left: 20px;
+}
+#action span#move_to_page, div#action span#move_to_category, div#action span#move_to_brand{
+    display:none;
+}
+/*Кнопка перемещения*/
+.products_main #list .checkbox {
+    margin-left:25px;
+}
+.products_main #list .move{
+    position:absolute;
+    top:50%;
+    /*top:33px;*/
+    margin-top:-18px;
+}
+.products_main #list .move div {
+    height: 16px;
+    width: 20px;
+}
+.move_zone {
+    background-image: url("../img/move_zone.png");
+    background-repeat: repeat;
+    cursor: move;
+    display: block;
+    float: left;
+    height: 16px;
+    margin: 0;
+    width: 20px;
+    position:relative;
+}
+
+/*Верхняя часть*/
+
+#header {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#middle h1 {
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+#header .add {
+    background:#FFFFFF;
+    border: 1px solid #4681D4;
+    border-radius: 15px;
+    color: #5E5E5E;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-top: 3px;
+    padding: 7px 17px 7px 17px;
+    text-decoration: none;
+    white-space: nowrap;
+    width: auto;
+    text-shadow: 0px 0px 1px  rgba(0,0,0,0.3);
+}
+#search {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 175px;
+}
+
+#search input.search {
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 15px;
+    width: 130px;
+}
+
+#search input.search_button {
+    background: url("../img/but_search.gif") no-repeat;
+    border-style: none;
+    cursor: pointer;
+    height: 25px;
+    margin-left: 4px;
+    width: 23px;
+}
+
+/*Кнопка применить*/
+#action input#apply_action{
+    float:right;
+    display: block;
+}
+.button_green {
+    border: 1px solid #459300;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+}
+.button_green, .button_red, .button_yellow {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font: 13px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+    height: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*Для выделиных ссылок*/
+#right_menu li.select a {
+    font-weight:bold;
+    color: #000;
+    padding: 4px 3px;
+    text-decoration: none;
+}
+/*Дополнительные классы*/
+.clear{
+    clear:both;
+}
+
+/*Для навигации*/
+#main_list .pagination{
+   float:left;
+}
+.pagination a {
+    color:#000;
+    margin-right:10px;
+}
+.pagination .selected {
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+}
+.pagination{
+   padding:10px;
+}
+
+/*Отображение всех вариантов*/
+#expand{
+    display: none;
+    float: right;
+    margin-top: 10px;
+    /*margin-bottom: 10px;*/
+}
+
+
+
+/******************
+** Товары внутри
+*******************/
+#product {
+    width: 100%;
+}
+
+#product #name {
+    display: table;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#product input.name {
+    display: table-cell;
+    font-size: 26px;
+    width: 98%;
+}
+#product .checkbox {
+    display: table-cell;
+    font-size: 15px;
+    padding-left: 20px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#product_brand {
+    display: block;
+    float: left;
+    width: 300px;
+}
+
+#product_brand label {
+    float: left;
+    margin-top: 5px;
+}
+
+#product_brand select {
+    font-size: 18px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+#product_categories {
+    float: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#product_categories label {
+    float: left;
+    margin-top: 5px;
+}
+
+#product_categories div {
+    float: left;
+    margin-left: 10px;
+    width: 540px;
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+#product_categories ul li {
+    margin-bottom: 5px;
+}
+
+
+#product_categories select {
+    font-size: 18px;
+    margin-right: 15px;
+    width: 300px;
+}
+
+#product_categories span.add {
+    padding-left: 20px;
+}
+#product_categories span.delete {
+    padding-left: 20px;
+}
+
+#variants_block {
+    background-color: #F0F0F0;
+    border: 1px dotted #D0D0D0;
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 940px;
+}
+
+#variants_block ul#header {
+    height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#variants_block ul#header li {
+    font-size: 13px;
+    margin-left: -2px;
+    padding-left: 3px;
+}
+#variants_block ul {
+    clear: left;
+    overflow: hidden;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+#variants_block ul li {
+    display: block;
+    float: left;
+    height: 31px;
+    overflow: hidden;
+}
+
+#variants_block ul li input {
+    color: #636363;
+    font-size: 14px;
+    height: 20px;
+    margin-left: 2px;
+    margin-top: 0;
+    padding-top: 2px;
+}
+
+#variants_block li.variant_move {
+    height: 16px;
+    padding-top: 5px;
+    width: 20px;
+}
+#variants_block li.variant_name {
+    padding-left: 5px;
+    width: 270px;
+}
+#variants_block li.variant_name input {
+    color: #000000;
+    float: left;
+    font-size: 16px;
+    margin-right: 2px;
+    width: 220px;
+}
+
+#variants_block li.variant_sku {
+    width: 120px;
+}
+#variants_block li.variant_sku input {
+    width: 95px;
+}
+
+#variants_block li.variant_price {
+    width: 120px;
+}
+
+#variants_block li.variant_price input {
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    width: 95px;
+}
+
+#variants_block li.variant_discount {
+    width: 95px;
+}
+#variants_block li.variant_discount input {
+    width: 70px;
+}
+
+#variants_block li.variant_amount {
+    font-size: 11px;
+    width: 90px;
+}
+
+#variants_block li.variant_amount input {
+    margin-right: 2px;
+    width: 35px;
+}
+
+.button_save {
+    float: right;
+    margin-right: 15px;
+    margin-top: 0;
+}
+
+#variants_block span.add {
+    clear: left;
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+/*Свойства товаров*/
+
+#middle h2 {
+    color: #000000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#middle #product h2 a{
+    color: #000000;
+    text-decoration:dotted;
+    font-size:14px;
+}
+
+.layer ul {
+    margin-bottom: 20px;
+}
+#product .block {
+    clear: both;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#product .block li {
+    clear: left;
+    display: block;
+    margin-bottom: 7px;
+    overflow: hidden;
+    width: 500px;
+}
+
+#product .block label.property {
+    clear: left;
+    color: #808080;
+    display: block;
+    float: left;
+    overflow: hidden;
+    padding-top: 2px;
+    width: 170px;
+    padding-right:5px;
+}
+
+#product .block div.page_url {
+    color: #909090;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 15px;
+    overflow: hidden;
+    padding-right: 5px;
+    padding-top: 4px;
+    text-align: right;
+    white-space: nowrap;
+    width: 65px;
+}
+
+#product .block li input.page_url {
+    padding: 0;
+    width: 197px !important;
+}
+
+#product .block li input[type="text"] {
+    font-size: 13px;
+    height: 18px;
+    width: 265px;
+}
+
+
+#product .block li textarea {
+    height: 60px;
+    width: 265px;
+}
+
+    /*для новых*/
+
+#product .block ul.new_features li label input {
+    font-size: 13px;
+    height: 18px;
+    margin-top: -2px;
+    width: 150px;
+}
+
+/*Автозаполнение*/
+.autocomplete-suggestions {
+    background-color: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    overflow: auto;
+    padding: 5px;
+    width: 100px;
+    max-height:100px !important;
+}
+.autocomplete-suggestions .autocomplete-suggestion {
+    cursor: default;
+}
+.autocomplete-suggestions div {
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+
+/*Правая колонкса с изображениями*/
+#column_right {
+    padding-left: 20px;
+    clear: right;
+}
+.layer ul {
+    margin-bottom: 20px;
+}
+/*
+#product .images li {
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    display: block;
+    height: 100px;
+   line-height: 100px;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    text-align: center;
+    vertical-align: top;
+    width: 100px;
+    word-spacing: normal;
+    position:relative;
+}*/
+
+#product .images li {
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    display: block;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    position:relative;
+    padding:5px;
+    word-spacing: normal;
+    /*line-height: 100px;*/
+    cursor:move;
+}
+
+#product .images li span,#product .images li a{
+   margin-left:10px;
+   float:left;
+   line-height:1.2em;
+   margin-top:40px;
+}
+#product .images li span{
+    display:block;
+    width:250px;
+    position:absolute;
+    left:110px;
+}
+/*
+#product .images li:hover .delete{
+    display: block;
+}
+
+#product .images a.delete {
+    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+    height:15px;
+    top:0;
+    right:0;
+    position: absolute;
+}
+*/
+
+
+#product .images img{
+    float:left;
+    display: block;
+    position: relative;
+}
+#product .images a.delete {
+    float:right !important;
+    margin-right:50px;
+    display: block;
+    position: relative;
+}
+
+/*Сообщения*/
+
+.message_success {
+    background-color: #C5FF8D;
+    border: 1px dotted #8CBF32;
+}
+.message {
+    clear: both;
+    color: #000000;
+    height: 25px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.message_success span {
+   
+}
+.message span {
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 50px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+.message_success a.link {
+    color: #3F8000;
+}
+.message a.link {
+    float: left;
+    margin-top: 5px;
+}
+
+
+.message a.button {
+    background: #F5F5F5;
+    border: 1px solid #A3A5A5;
+    display: block;
+    float: right;
+    padding: 5px 20px;
+    text-decoration: none;
+    color:#8E1A8B;
+}
+/*ошибка*/
+
+.message_error {
+    background-color: #FFCACA;
+    border: 1px dotted #FF4545;
+}
+
+.message_error span {
+   font-weight:bold;
+}
+/*****************/
+.layer {
+    padding-top: 15px;
+}
+.remote_image{
+    display:block;
+}
+.load_image{
+    margin-bottom:5px;
+}
+/*редактор*/
+
+.editor_small {
+    height: 200px;
+    width:100%;
+}
+
+.editor_large {
+    height: 500px;
+    width:100%;
+}
+
+#file_result{
+    width:800px;
+    border:1px solid #000;
+    top:150px;
+    margin-top:-50px;
+    left:50%;
+    margin-left:-350px;
+    /*margin-top:-250px;*/
+    padding:33px 10px 10px 10px;
+    background:#fff;
+    position: fixed;
+    z-index:30000;
+    border-top:none;
+}
+#file_box{
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:29999;
+}
+
+#images_wizard{
+    font-size:18px !important;
+}
+#file_result .box{
+    overflow-y:scroll;
+    height:530px;
+    width:800px;
+}
+#file_result .submit_image{
+    position:absolute;
+    bottom:-20px;
+}
+/*Дополнительно*/
+
+#new_image li{
+    background:#F0F0F0 !important;
+}
+.description{
+    padding-top:5px;
+    padding-bottom:15px;
+    width:500px;
+    color:#CE9580;
+}
+/************************************
+***** ДЛЯ КАТЕГОРИЙ
+*************************************/
+
+/*список*/
+.categories #list {
+    border-bottom: 1px solid #D0D0D0;
+    clear: both;
+    min-width: 200px;
+}
+
+.categories #list .row {
+    background-color: #F3F3F3;
+    border-collapse: collapse;
+    border-top: 1px solid #D0D0D0;
+}
+.categories #list .cell {
+    float: left;
+    padding: 10px 0 7px;
+    vertical-align: top;
+}
+.categories #list .move {
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+    width: 20px;
+}
+
+.categories #list .move div {
+    height: 16px;
+    margin-top: 2px;
+    width: 20px;
+}
+
+.categories #list .move div {
+    height: 16px;
+    margin-top: 2px;
+    width: 20px;
+}
+
+.categories #list .checkbox {
+    padding-left: 5px;
+    padding-right: 0;
+    width: 20px;
+}
+
+.categories #list .icons {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    white-space: nowrap;
+}
+.categories #list a {
+    border-bottom-color: #000000;
+    color: #000000;
+    font-size:14px;
+}
+
+.categories #list .icons {
+    padding:10px;
+    background:#fefcf5;
+    border-radius:5px;
+    margin-right:10px;
+    border:1px solid #cfcfcf;
+}
+.categories #list .icons a{
+    color:#328FED;
+    margin-left:5px;
+    margin-right:5px;
+}
+.categories #list .invisible .icons .enable{
+    color:#000;
+}
+#main_list .categories {
+    width: 600px;
+}
+.categories .tree_row{
+    padding-top:5px;
+    padding-bottom:5px;
+    
+}/************************************
+***** ДЛЯ СТРАНИЦ
+*************************************/
+
+/*список*/
+.page_main #list {
+    border-bottom: 1px solid #D0D0D0;
+    clear: both;
+    min-width: 200px;
+}
+
+.page_main #list .row {
+    background-color: #F3F3F3;
+    border-collapse: collapse;
+    border-top: 1px solid #D0D0D0;
+    padding:5px 0;
+}
+.page_main #list .cell {
+    float: left;
+    padding: 10px 0 7px;
+    vertical-align: top;
+}
+.page_main #list .move {
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+    width: 20px;
+}
+
+.page_main #list .move div {
+    height: 16px;
+    margin-top: 2px;
+    width: 20px;
+}
+
+.page_main #list .move div {
+    height: 16px;
+    margin-top: 2px;
+    width: 20px;
+}
+
+.page_main #list .checkbox {
+    padding-left: 5px;
+    padding-right: 0;
+    width: 20px;
+}
+
+.page_main #list .icons {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    white-space: nowrap;
+}
+.page_main #list a {
+    border-bottom-color: #000000;
+    color: #000000;
+    font-size:14px;
+}
+
+.page_main #list .icons {
+    padding:10px;
+    background:#fefcf5;
+    border-radius:5px;
+    margin-right:10px;
+    border:1px solid #cfcfcf;
+}
+.page_main #list .icons a{
+    color:#328FED;
+    margin-left:5px;
+    margin-right:5px;
+}
+.page_main #list .invisible .icons .enable{
+    color:#000;
+}
+
+#middle .format .button_save{
+    float:left;
+    margin-top:10px;
+    margin-left:332px;
+} 
+
+/*Для перестаскивания*/
+#dropZone {
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    display: none;
+    height: 70px;
+    margin-right: 16px;
+    margin-top:20px;
+    text-align: center;
+    position:relative;
+}
+.dropInput {
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top:0;
+}
+#dropMessage {
+    height: 45px;
+    margin-top: 25px;
+}
+#sort_bar .wizard{
+     background: #F0F0F0 !important;
+}
+
+/*БРЕНДЫ*/
+
+#list .even{
+    background: #EBEBEB !important;
+}
+
+.brands .row{
+    padding:5px 0px;
+}
+
+/*Свойства*/
+#right_menu .selected > a{
+    color: #000000;
+    font-weight: bold;
+    padding: 4px 3px;
+}
+#right_menu .subcategories{
+    margin-top:5px;
+}
+#column_left .multiple_categories {
+    font-size: 13px;
+    height: 400px;
+    width: 440px;
+}
+
+/*Заказаы*/
+.orders .row{
+    padding:5px 0px;
+}
+.orders .cell{
+    margin-right:5px;
+}
+.orders .paid{
+    margin-right:5px;
+    margin-left:18px;
+    background:#ECDB9E !important;
+}
+.orders #list .note {
+    background-color: #FFFAC4;
+    border: 1px dotted #FFC539;
+    clear: both;
+    margin-top: 3px;
+    padding: 3px;
+    width: 100%;
+}
+.orders .no-paid{
+    margin-right:5px;
+    background:#F27777 !important;
+}
+.orders .order_date {
+    color: #505050;
+    font-size: 12px;
+    padding-left: 10px;
+    width: 120px;
+    position:relative;
+    top:2px;
+}
+.orders #list .name_paid {
+   float:right;
+   min-width:85px;
+}
+.orders #list .bottom {
+  margin-top:5px;
+}
+
+.order_label {
+    background-color: #E0E0E0;
+    background-image: url(../img/label.png);
+    display: block;
+    float: right;
+    height: 16px;
+    margin-left: 5px;
+    padding: 0;
+    width: 16px;
+}
+.even .order_label {
+    background-position: -32px center;
+}
+
+#right_menu  .order_label{
+    float:left;
+    margin-right:5px;
+}
+/*Заказ*/
+div #order_details {
+    float: right;
+    margin-top: -10px;
+    width: 300px;
+}
+.order_details label {
+    color: #808080;
+    display: block;
+}
+#order_details #user {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+#order_details div .view_order_detail {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+#order #purchases {
+    float: left;
+    width: 600px;
+}
+
+#middle #order h2 a {
+    color: #000000;
+    font-size: 14px;
+}
+#order .cell{
+    margin-top:8px;
+}
+#order .row .image{
+    margin-top:0px;
+    margin-left:5px;
+    
+}
+#order .row .amount{
+    /*float:right;*/
+    
+}
+#order .row .price{
+    width:80px;
+    
+}
+#order .purchase_name{
+    width:300px;
+}
+
+#order #purchases .edit_purchases {
+    float: left;
+    margin-top: 5px;
+}
+#order #purchases div.subtotal {
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: right;
+    width: 100%;
+}
+
+#order .block {
+    clear: both;
+    width: 100%;
+}
+#order .layer {
+    border-bottom:1px solid #E7E7E7;
+    margin-bottom:10px;
+    padding-bottom:10px;
+}
+#order .order_label {
+    float:left;
+    margin-right:5px;
+}
+
+#order #purchases .total {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: right;
+    width: 100%;
+}
+
+#order .input_autocomplete {
+    font-size: 12px;
+    height: 16px;
+    margin-top: 4px;
+    width: 290px;
+}
+
+#order .autocomplete-suggestions .autocomplete-suggestion {
+    cursor: default;
+}
+#order .autocomplete-suggestions div {
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+#order .amount  input[name*="purchases[amount]"]{
+   width:30px;
+}
+#order  .price  input[name*="purchases[price]"]{
+    width:60px;
+}
+
+/*Метки*/
+.labels .order_label{
+    float:left;
+    margin-right:5px;
+}
+
+/*Метка*/
+.order_label_big {
+    background-color: #E0E0E0;
+    background-image: url(../img/label_big.png);
+    display: block;
+    float: left;
+    height: 32px;
+    margin-right: 5px;
+    padding: 0;
+    width: 32px;
+}

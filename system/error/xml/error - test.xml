@@ -1,0 +1,26 @@
+<errors>
+    <error id="1">
+        <type>Core_Exception</type>
+        <code>0</code>
+        <message><![CDATA[Ошибка]]></message>
+        <file>D:\OpenServer\domains\tree\system\classes\core\Request.php</file>
+        <line>53</line>
+        <class>Core_Request</class>
+        <method>Core_Request</method>
+        <debug>
+            <![CDATA[
+            <pre class="source"><code><span class="line"><span class="number">48</span>         
+            </span><span class="line"><span class="number">49</span>         Request::$design = Module::factory('design', TRUE);
+            </span><span class="line"><span class="number">50</span>     }
+            </span><span class="line"><span class="number">51</span>     
+            </span><span class="line"><span class="number">52</span>     function render(){
+            </span><span class="line highlight"><span class="number">53</span>         throw new Core_Exception('Ошибка');
+            </span><span class="line"><span class="number">54</span>         // Количество товара в корзине
+            </span><span class="line"><span class="number">55</span>         Request::$design-&gt;cart = Module::load('cart',NULL,'cart_num');
+            </span><span class="line"><span class="number">56</span>         
+            </span><span class="line"><span class="number">57</span>         // Категории товаров
+            </span><span class="line"><span class="number">58</span>         Module::load('categories',NULL,'init_categories');
+            </span></code></pre>
+            ]]>
+        </debug>
+    </error></errors>
